@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Client Side Sparql Caching System</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+// code to be added here to display result
+// Attach a submit handler to the form
+$(document).ready(function () {
+$( "#sparqlForm" ).submit(function( event ) {
+  // Stop form from submitting normally
+  event.preventDefault();
+  var $form = $( this ),
+    query = $form.find( "#element_1" ).val();
+  url = 'http://localhost:8081/RESTfulExample/rest/sparqlCache/post'; 
+ 
+  // Get some values from elements on the page:
+  
+ 
+  // Send the data using post
+  var posting = $.ajax({
+  method: "POST",
+  crossDomain: true,
+  url: url,
+  contentType: "text/plain; charset=utf-8",
+  data: query,
+  xhrFields: {
+    // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
+    // This can be used to set the 'withCredentials' property.
+    // Set the value to 'true' if you'd like to pass cookies to the server.
+    // If this is enabled, your server must respond with the header
+    // 'Access-Control-Allow-Credentials: true'.
+    withCredentials: false
+  },
+  success: function(data){        
+    alert("Successfully Retrieved Results");
+    $( "#result_data" ).append( data );
+    $(".results").show();
+    /* var arr = $.parseJSON(json);
+    $.each(arr, function (index, value) {
+        dataArray.push([value["yourID"].toString(), value["yourValue"] ]);
+    }); */
+    /* $.getJSON(data, function(data1){
+        for (var i=0, len=data1.length; i < len; i++) {
+            console.log(data1[i]);
+        }
+    }); */
+  },
+        error: function(jqXHR, textStatus, errorThrown) {
+            $("#loadingimageid").remove();
+            alert('generateReportFromMR:Error in processing!');
+            console.log(jqXHR);
+        }
+});
+});
+});
+
+/*.done(function( data ) {
+    var content = data;
+    alert('Hi');
+    //.......
+    $( "#result_data" ).append( content );
+    $(".results").show();
+  });//$.get( url , { name: "John", time: "2pm" } );
+ 
+  // Put the results in a div
+  //posting */
+</script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>SPARQL Query Endpoint Engine</a></h1>
+		<form id="sparqlForm" class="appnitro"  method="post" action="">
+			<div class="form_description">
+				<h2>SPARQL Query Endpoint Engine</h2>
+				<p>Enter your query in the space provided</p>
+			</div>						
+			<ul >
+				<li id="li_1" >
+					<label class="description" for="element_1">SPARQL Query </label>
+					<div>
+						<textarea id="element_1" name="element_1" class="element textarea medium"></textarea> 
+					</div> 
+				</li>
+			
+				<li class="buttons">
+				    <input type="hidden" name="form_id" value="1003449" />
+				    
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+				</li>
+			</ul>
+
+			<span  class="results" id = "result_text" style = "font-size:20px;" >
+				<br/><br/>
+				Obtained Results
+			</span>
+		</form>	
+
+		<div id = "result_data" class="results">
+		</div>
+		<div id="footer">
+			<br/>
+			© <a href="">Sri Harsha Anand Pushkala & Hari Krishn Gupta</a>
+		</div>
+	</div>
+
+	<img id="bottom" src="bottom.png" alt="">
+
+	</body>
+</html>
