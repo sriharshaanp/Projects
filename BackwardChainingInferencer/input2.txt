@@ -1,0 +1,13 @@
+A(C,B)
+11
+B(C,x)=>A(x,B)
+X(x)=>Z(x)
+S(x)=>Y(x)
+E(x)=>G(x)
+Z(x)&Y(x)=>R(x)
+G(x)&R(x)=>A(x,B)
+D(C,x)=>A(x,B)
+S(C)
+F(C)
+X(C)
+E(C)

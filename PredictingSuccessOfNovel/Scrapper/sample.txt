@@ -1,0 +1,2 @@
+CLA:6 http://manybooks.net/categories/CLA
+GHO:30 http://manybooks.net/categories/GHO
