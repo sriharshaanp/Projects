@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HW9</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tabbed">Homework9</string>
+    <string name="app_id">1506154922980891</string>
+    <string name="title_activity_splash_screen">Homework9</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

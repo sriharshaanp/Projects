@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#FFF" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#DADADA" >
+
+                    <!-- Row 1 -->
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="70px"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/some_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp"
+                            android:text="See more details on Zillow:" />
+
+                        <Button
+                            android:id="@+id/shareButton"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/some_line"
+                            android:layout_marginRight="14dp"
+                            android:background="@drawable/sharebutton"
+                            android:paddingTop="10dp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <!-- Row 2 -->
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:paddingTop="10dp" />
+                </TableRow>
+
+                <!-- Row 3 -->
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:background="#DADADA">
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 3 -->
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 3 -->
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#DADADA" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description5"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 3 -->
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description6"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 7 -->
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:background="#DADADA">
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description7"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 8 -->
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description8"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 9 -->
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#DADADA" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description9"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 10 -->
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description10"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <!-- Row 11 -->
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:background="#DADADA">
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description11"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 12 -->
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description12"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 13 -->
+
+                <TableRow
+                    android:id="@+id/tableRow13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:background="#DADADA">
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description13"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 14 -->
+
+                <TableRow
+                    android:id="@+id/tableRow14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description14"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value14"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 15 -->
+
+                <TableRow
+                    android:id="@+id/tableRow15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#DADADA" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description15"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 16 -->
+
+                <TableRow
+                    android:id="@+id/tableRow16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description16"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 16 -->
+
+                <TableRow
+                    android:id="@+id/tableRow17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:background="#DADADA">
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description17"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value17"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- Row 18 -->
+
+                <TableRow
+                    android:id="@+id/tableRow18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="325dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/property_description18"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/property_value18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_img18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/property_value18"
+                            android:paddingTop="10dp"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+        <!--
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/some_line"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/sharebutton"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/some_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:paddingTop="10dp"
+        android:text="See more details on Zillow:" />
+        -->
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFF" >
+
+        <TextView
+            android:id="@+id/first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:stackFromBottom="true"
+            android:textColor="#000" />
+    </RelativeLayout>
+    -->
+
+
+    <!--
+<ListView
+    android:id="@+id/mainListView"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_marginTop="70dp"
+    android:background="#FFF" >
+</ListView>
+    -->
+
+</RelativeLayout>

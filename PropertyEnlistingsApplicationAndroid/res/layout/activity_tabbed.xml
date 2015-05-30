@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+     >
+
+
+</android.support.v4.view.ViewPager>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_alignParentBottom="true"
+    android:background="#FFF" >
+  
+  <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/imageButton2"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="3dp"
+       android:text="\u00AE Zillow, Inc., 2006-2014" />
+<TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/imageButton2"
+       android:layout_below="@+id/textView1"
+       android:layout_marginLeft="65dp"
+       android:layout_marginTop="5dp"
+       android:text="Use is subject to "
+  />
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/imageButton2"
+       android:layout_below="@+id/textView1"
+       android:layout_marginLeft="170dp"
+       android:layout_marginTop="5dp"
+       android:autoLink="web"
+       android:linksClickable="true"
+  />
+   
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/imageButton2"
+       android:layout_below="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="60dp"
+       android:layout_marginTop="30dp"
+       android:autoLink="web"
+        android:linksClickable="true"
+	 />
+   
+</RelativeLayout> 
+</RelativeLayout>
